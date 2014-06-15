@@ -10,7 +10,7 @@ from oneid.namecoin import NamecoinProxy
 
 @subscriber(BeforeRender)
 def add_renderer_globals(event):
-    event['project'] = 'oneid'
+    event['project'] = 'OneID'
 
 
 @view_config(route_name='home', renderer='templates/home.mako')

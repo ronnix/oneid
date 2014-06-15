@@ -64,6 +64,19 @@ p {
 .starter-template .content .lead .font-normal {
   color: #ffffff;
 }
+.starter-template .content .thanks {
+  margin-top: 48px;
+  font-size: 16px;
+  color: #f2b7bd;
+}
+.starter-template .content .thanks .font-normal {
+  color: #ffffff;
+}
+.starter-template .content .lead a,
+.starter-template .content .thanks a {
+  color: #ffffff;
+  font-weight: normal;
+}
 .starter-template .links {
   float: right;
   right: 0;
