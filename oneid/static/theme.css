@@ -117,7 +117,8 @@ p {
   color: #ffffff;
 }
 .starter-template .copyright {
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-bottom: 24px;
   font-size: 0.9em;
   color: #f2b7bd;
   text-transform: lowercase;
