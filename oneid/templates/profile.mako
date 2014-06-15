@@ -17,10 +17,10 @@
       <%self:entry name="email" title="Email">
           <i class="fa fa-envelope-o"></i>
       </%self:entry>
-      <%self:entry name="bitcoin" title="BitCoin">
+      <%self:entry name="bitcoin" title="Bitcoin">
           <i class="fa fa-bitcoin"></i>
       </%self:entry>
-      <%self:entry name="namecoin" title="NameCoin">
+      <%self:entry name="namecoin" title="Namecoin">
           <i class="fa fa-bitcoin"></i>
       </%self:entry>
     </div>

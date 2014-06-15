@@ -5,7 +5,7 @@ from pyramid.events import BeforeRender, subscriber
 from pyramid.exceptions import NotFound
 from pyramid.view import view_config
 
-from oneid.namecoin import NameCoinProxy
+from oneid.namecoin import NamecoinProxy
 
 
 @subscriber(BeforeRender)
@@ -21,7 +21,7 @@ def home(request):
 
 @view_config(route_name='info', renderer='json')
 def info(request):
-    proxy = NameCoinProxy()
+    proxy = NamecoinProxy()
     return proxy.getinfo()
 
 
@@ -47,7 +47,7 @@ def profile(request):
             ],
         })
     else:
-        proxy = NameCoinProxy()
+        proxy = NamecoinProxy()
         try:
             response = proxy.name_show('id/{}'.format(request.matchdict['id']))
         except KeyError:

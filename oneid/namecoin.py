@@ -3,7 +3,7 @@ import os
 from bitcoin.rpc import Proxy, JSONRPCException
 
 
-class NameCoinProxy(Proxy):
+class NamecoinProxy(Proxy):
 
     def __init__(self, **kwargs):
         nmc_conf_file = os.path.expanduser('~/.namecoin/namecoin.conf')
