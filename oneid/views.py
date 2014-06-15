@@ -45,6 +45,7 @@ def profile(request):
                 'MyRZ5YHpqGiS288smQfpXtN62W9a3ZoDEg',
                 'MyRZ5YHpqGiS288smQfpXtN62W9a3ZoDEg',
             ],
+            'photo_url': "http://www.gravatar.com/avatar/b06b5d4777e2734feb91298062539ec8?s=256",
         })
     else:
         proxy = NamecoinProxy()

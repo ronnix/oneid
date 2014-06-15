@@ -4,7 +4,11 @@
 
 <div class="row">
   <div class="col-md-2 col-md-offset-1">
-    <img class="logo img-responsive" src="${request.static_url('oneid:static/pyramid.png')}" alt="pyramid web framework">
+    % if context.get('photo_url'):
+    <img class="logo img-circle img-responsive" src="${photo_url}" alt="photo">
+    % else:
+    <img class="logo img-responsive" src="${request.static_url('oneid:static/pyramid.png')}" alt="photo">
+    % endif
   </div>
   <div class="col-md-8 col-md-offset-1">
     <div class="content">
