@@ -54,6 +54,7 @@ p {
   margin-bottom: 8px;
 }
 .starter-template .content .item i {
+  display: inline-block;
   width: 20px;
   text-align: center;
 }

@@ -25,7 +25,7 @@
           <i class="fa fa-bitcoin"></i>
       </%self:entry>
       <%self:entry name="namecoin" title="Namecoin">
-          <i class="fa fa-bitcoin"></i>
+          <i>N</i>
       </%self:entry>
     </div>
   </div>
