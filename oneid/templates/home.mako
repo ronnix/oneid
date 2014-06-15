@@ -1,10 +1,10 @@
 <%inherit file="base.mako"/>
 
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-2 col-md-offset-1">
     <img class="logo img-responsive" src="${request.static_url('oneid:static/pyramid.png')}" alt="pyramid web framework">
   </div>
-  <div class="col-md-10">
+  <div class="col-md-9">
     <div class="content">
       <h1><span class="font-semi-bold">OneID</span> <span class="smaller">Namecoin-based identity</span></h1>
 
