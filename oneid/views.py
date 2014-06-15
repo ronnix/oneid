@@ -19,6 +19,12 @@ def home(request):
     }
 
 
+@view_config(route_name='info', renderer='json')
+def info(request):
+    proxy = NameCoinProxy()
+    return proxy.getinfo()
+
+
 @view_config(route_name='profile', renderer='templates/profile.mako')
 def profile(request):
     data = {
