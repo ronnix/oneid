@@ -68,8 +68,8 @@ command to register your username:
 Make a note of the short hexadecimal number in the response
 (``<rand>``), as you will need to use it in the next command.
 
-It is recommended that you then wait for at least 12 blocks
-before the first update the name.
+It is then recommended that you wait for at least 12 blocks
+before you first update the name:
 
 .. code-block::
 
@@ -81,7 +81,7 @@ Further updates will simply be:
 
     $ namecoind name_update id/<username> '<json-value>'
 
-Please note that names expire after 36,000 blocks (~250 days),
+Please note that a name expire after 36,000 blocks (~250 days),
 so you'll need to update it periodically to reset the
 expiration time.
 
