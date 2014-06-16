@@ -3,14 +3,13 @@
 <%block name="title">${id} — OneID</%block>
 
 <div class="row">
-  <div class="col-md-2 col-md-offset-1">
-    % if context.get('photo_url'):
-    <img class="logo img-circle img-responsive" src="${photo_url}" alt="photo">
-    % else:
-    <img class="logo img-responsive" src="${request.static_url('oneid:static/pyramid.png')}" alt="photo">
-    % endif
+  <div class="col-md-4">
+    <% photo_url = context.get('photo_url') or request.static_url('oneid:static/pyramid.png') %>
+    <div class="photo" style="background-image: url('${photo_url}');">
+      <img src="${photo_url}">
+    </div>
   </div>
-  <div class="col-md-8 col-md-offset-1">
+  <div class="col-md-8">
     <div class="content">
 
       <h1>${id}</h1>
