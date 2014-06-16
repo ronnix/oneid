@@ -4,7 +4,7 @@
 
 <div class="row">
   <div class="col-md-4">
-    <% photo_url = context.get('photo_url') or request.static_url('oneid:static/pyramid.png') %>
+    <% photo_url = context.get('photo_url') or 'http://www.gravatar.com/avatar/00000000000000000000000000000000?s=165&d=mm&f=y' %>
     <div class="photo" style="background-image: url('${photo_url}');">
       <img src="${photo_url}">
     </div>
