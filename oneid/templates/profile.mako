@@ -20,6 +20,9 @@
       <%self:entry name="email" title="Email">
           <i class="fa fa-envelope-o"></i>
       </%self:entry>
+      <%self:entry name="xmpp" title="XMPP">
+          <i class="fa fa-comment-o"></i>
+      </%self:entry>
       <%self:entry name="bitcoin" title="Bitcoin">
           <i class="fa fa-bitcoin"></i>
       </%self:entry>
