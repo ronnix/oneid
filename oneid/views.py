@@ -25,9 +25,9 @@ def info(request):
     return proxy.getinfo()
 
 
-@view_config(route_name='profile', renderer='templates/profile.mako')
+@view_config(route_name='profile', accept='text/html', request_param='format=json', renderer='json')
+@view_config(route_name='profile', accept='text/html', renderer='templates/profile.mako')
 @view_config(route_name='profile', accept='application/json', renderer='json')
-@view_config(route_name='profile', request_param='format=json', renderer='json')
 def profile(request):
     id_ = request.matchdict['id']
     if id_ == 'test':
