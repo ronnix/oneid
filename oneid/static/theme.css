@@ -50,6 +50,9 @@ p {
   margin-top: 10px;
   font-size: 16px;
 }
+.starter-template .content .entry a {
+  color: white;
+}
 .starter-template .content .item {
   margin-bottom: 8px;
 }

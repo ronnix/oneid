@@ -23,6 +23,9 @@
       <%self:entry name="xmpp" title="XMPP">
           <i class="fa fa-comment-o"></i>
       </%self:entry>
+      <%self:entry name="weblog" title="Weblog" link="url">
+          <i class="fa fa-link"></i>
+      </%self:entry>
       <%self:entry name="bitcoin" title="Bitcoin">
           <i class="fa fa-bitcoin"></i>
       </%self:entry>
@@ -37,7 +40,7 @@
 </div>
 
 
-<%def name="entry(name, title)">
+<%def name="entry(name, title, link=None)">
   <%
     data = context.get(name)
     items = data if isinstance(data, list) else [data]
@@ -49,7 +52,13 @@
       </div>
       <div class="col-md-10">
       % for item in items:
-        <div class="item">${caller.body()}${item}</div>
+        <div class="item">${caller.body()}
+        % if link == 'url':
+        <a href="${item}">${item}</a>
+        % else:
+        ${item}
+        % endif
+        </div>
       % endfor
       </div>
     </div>
