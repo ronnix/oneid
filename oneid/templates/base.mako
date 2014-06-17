@@ -17,7 +17,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this scaffold -->
-    <link href="${request.static_url('oneid:static/theme.css')}" rel="stylesheet">
+    <link href="${request.cachebusted_url('oneid:static/theme.css')}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
