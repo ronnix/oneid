@@ -17,7 +17,7 @@
       <%self:entry name="name" title="Name">
           <i class="fa fa-user"></i>
       </%self:entry>
-      <%self:entry name="email" title="Email">
+      <%self:entry name="email" title="Email" link="mailto">
           <i class="fa fa-envelope-o"></i>
       </%self:entry>
       <%self:entry name="xmpp" title="XMPP">
@@ -55,6 +55,8 @@
         <div class="item">${caller.body()}
         % if link == 'url':
         <a href="${item}">${item}</a>
+        % elif link == 'mailto':
+        <a href="mailto:${item}">${item}</a>
         % else:
         ${item}
         % endif
