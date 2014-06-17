@@ -29,6 +29,9 @@
       <%self:entry name="namecoin" title="Namecoin">
           <i>N</i>
       </%self:entry>
+      <%self:entry name="gpg" title="GPG">
+          <i class="fa fa-key"></i>
+      </%self:entry>
     </div>
   </div>
 </div>
