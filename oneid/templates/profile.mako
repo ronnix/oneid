@@ -20,7 +20,7 @@
       <%self:entry name="email" title="Email" link="mailto">
           <i class="fa fa-envelope-o"></i>
       </%self:entry>
-      <%self:entry name="xmpp" title="XMPP">
+      <%self:entry name="xmpp" title="XMPP" link="xmpp">
           <i class="fa fa-comment-o"></i>
       </%self:entry>
       <%self:entry name="weblog" title="Weblog" link="url">
@@ -57,6 +57,8 @@
         <a href="${item}">${item}</a>
         % elif link == 'mailto':
         <a href="mailto:${item}">${item}</a>
+        % elif link == 'xmpp':
+        <a href="xmpp:${item}">${item}</a>
         % else:
         ${item}
         % endif
