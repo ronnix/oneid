@@ -1,6 +1,6 @@
 <%inherit file="base.mako"/>
 
-<%block name="title">${id} — OneID</%block>
+<%block name="title">${request.matchdict['id']} — OneID</%block>
 
 <div class="row">
   <div class="col-md-4">
@@ -12,7 +12,7 @@
   <div class="col-md-8">
     <div class="content">
 
-      <h1>${id}</h1>
+      <h1>${request.matchdict['id']}</h1>
 
       <%self:entry name="name" title="Name">
           <i class="fa fa-user"></i>

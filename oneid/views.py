@@ -26,12 +26,12 @@ def info(request):
 
 
 @view_config(route_name='profile', renderer='templates/profile.mako')
+@view_config(route_name='profile', accept='application/json', renderer='json')
+@view_config(route_name='profile', request_param='format=json', renderer='json')
 def profile(request):
-    data = {
-        'id': request.matchdict['id'],
-    }
-    if data['id'] == 'test':
-        data.update({
+    id_ = request.matchdict['id']
+    if id_ == 'test':
+        data = {
             'name': 'Ronan Amicel',
             'email': [
                 'ronan@amicel.net',
@@ -46,7 +46,7 @@ def profile(request):
                 'MyRZ5YHpqGiS288smQfpXtN62W9a3ZoDEg',
             ],
             'photo_url': "http://www.gravatar.com/avatar/b06b5d4777e2734feb91298062539ec8?s=256",
-        })
+        }
     else:
         proxy = NamecoinProxy()
         try:
@@ -56,7 +56,7 @@ def profile(request):
         pprint(response)
         value = response.get('value')
         try:
-            data.update(json.loads(value))
+            data = json.loads(value)
         except ValueError:
             raise NotFound
     return data
